@@ -1,0 +1,71 @@
+body {
+    background-color: #fbfbfb;
+}
+.container {
+    margin-right: 150px;
+    margin-left: 150px;
+}
+.warning-authorization {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.red-warning {
+    display: flex;
+}
+.warning {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+}
+.warning-text {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    color: #ff0000;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 16px;
+}
+.authorization {
+    width: 138px;
+    height: 32px;
+    border-radius: 8px;
+    border: 2px solid #243c58;
+    background-color: #ffffff;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 4px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+.registration-form {
+    text-align: center;
+    font-weight: 700;
+    color: #243c58;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.needed-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.border {
+    width: 25%;
+    height: 30px;
+    border: 1px solid #707070;
+    text-align: center;
+    padding-top: 6px;
+    font-size: 15px;
+}
+.address {
+    background-color: #243c58;
+    color: #fbfbfb;
+}
