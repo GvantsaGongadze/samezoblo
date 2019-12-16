@@ -1,0 +1,156 @@
+/* HEADER */
+.header-main{
+display: flex;
+justify-content: space-between;
+align-content: center;
+background-color: #233c58;
+position: fixed;
+width: 100%;
+z-index: 1000000;
+}
+
+
+
+.main-logo{
+display: flex;
+margin-left: 30px;
+}
+.samezoblo-logo{
+width: 60px;
+
+}
+.samezoblo-text{
+display: flex;
+align-items: center;
+color: white;
+font-size: 20px;
+}
+
+
+.wrapper{
+display: flex;
+justify-content: space-between;
+margin-right: 55px;
+align-items: center;
+}
+.private-page{
+    display: flex;
+    align-items: center;
+    margin-right: 55px;
+  
+    font-size: 15px;
+}
+.private-page:hover .private-page-text{
+    background-color: white;
+    color: #233c58;
+}
+.private-page-text{
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 19px;
+    height: 40px;
+    padding: 10px;
+}
+
+.change-language{
+display: flex;
+align-items: center;
+
+}
+.language-text{
+    color: white;
+    border-radius: 19px;
+height: 40px;
+padding: 10px;
+}
+.arrow{
+    color: white;
+    margin-left: 5px;
+ 
+}
+ .change-language:hover  { 
+    background-color: white;
+    color: #233c58;
+    border-radius: 19px;
+    height: 40px;
+    padding: 10px;
+}
+.change-language:hover .arrow{ 
+    color: #233c58;
+
+}
+.change-language:hover .language-text{ 
+    color: #233c58;
+
+}
+/* FOOTER */
+.more-info{
+width:100%;
+height: 60px;
+background-color: white;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.info-text{
+color: #233c58;
+font-weight: bolder;
+font-size: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 10px;
+}
+
+/* MAIN CONTANT */
+.gradient{
+    background-image: linear-gradient(to bottom, rgba(221, 226, 253, 0.68), rgba(224, 224, 224, 0.22));
+height: 100%;
+position: relative;
+}
+
+.background-image{
+height: 871px;
+background:  url("../ნინოს ფაილები/7-1.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
+/* ///MAIN TEXT//// */
+.main-contant-text{
+margin-left: 350px;
+text-shadow: 2px 2px #5d606dab;
+font-family: "BPG Glaho WEB Caps", sans-serif;
+margin-left: 350px;
+}
+.text1{
+font-size: 45px;
+color: white;
+}
+.text2{
+    font-size: 45px;
+    color: white;
+    margin-top: 15px;
+}
+/* ///////////INPUT////////// */
+.form-wrapper{
+    margin-top: 110px;
+    margin-left: 350px;
+}
+.main-form{
+
+}
+.input{
+    height: 70px;
+    width: 877px;
+    border-radius: 10px;
+    background-color: #f9f3f3e0;
+    font-size: 15px;
+    padding-left: 29px;
+    color: #233c58;
+    font-size: 16px;
+
+}
+.wrapper-box{
+    position: absolute;
+    top: 300px;
+}
