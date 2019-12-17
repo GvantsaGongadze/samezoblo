@@ -28,19 +28,26 @@
         <h6 class="border activating">ანგარიშის გააქტიურება</h6>
     </div>
 
-    <h6>მისამართი *</h6>
-    <input type="text">
+    <div class="address-submit">
+        <label id="address" for="submit">მისამართი <samp class="red-star">*</samp></label> 
+        <input class="submit" type="text" placeholder="მიუთითეთ თქვენი მისამართი">
+    </div>  
 
-    <h6>სამეზობლოს კოდი</h6>
-    <input type="text">
+    <div class="code-submit">
+        <label id="code" for="code">სამეზობლოს კოდი</label>
+        <input class="submit" type="text" placeholder="მიუთითეთ თქვენი მისამართი">
+    </div>
+
+    <div class="map-mark">
+        <h6 id="mark">მონიშნეთ თქვენი მისამართი რუკაზე <samp class="red-star">*</samp></h6>
+        <img id="map" src="./img/map.png" alt="map">
+    </div>
+
     
-    <h6>მონიშნეთ თქვენი მისამართი რუკაზე *</h6>
-    <img src="./img/map.png" alt="map">
+    <h6 id="important"><samp class="red-star">*</samp> სავალდებულო ინფორმაცია</h6>
 
-    <h6>* სავალდებულო ინფორმაცია</h6>
-
-    <button>შემდეგი</button>
-    <img src="./icons/next.svg" alt="">
+    <button class="next">შემდეგი <img id="next-icon" src="./icons/next.svg" alt="next"></button>
+    <!-- <img src="./icons/next.svg" alt="next"> -->
     </div>
 </body>
 </html>
