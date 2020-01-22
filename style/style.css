@@ -1,147 +1,145 @@
-/* HEADER */
-.header-main{
-display: flex;
-justify-content: space-between;
-align-content: center;
-background-color: #233c58;
-position: fixed;
-width: 100%;
-height: 70px;
-z-index: 1000000;
+.header{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    background-color: #318cf7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-
-
+.logos-div{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
 .main-logo{
-display: flex;
-margin-left: 30px;
-}
-.samezoblo-logo{
 width: 60px;
-
+margin-left: 20px;
 }
-.samezoblo-text{
-display: flex;
-align-items: center;
-color: white;
-font-size: 20px;
-}
-
-
-.wrapper{
-display: flex;
-justify-content: space-between;
-margin-right: 55px;
-align-items: center;
-}
-.private-page{
-    display: flex;
-    align-items: center;
-    margin-right: 55px;
-  
-    font-size: 15px;
-}
-.private-page:hover .private-page-text{
-    background-color: white;
-    color: #233c58;
-}
-.background-color{
-    background-color: white;
-.private-page-text{
-    display: flex;
-    align-items: center;
+.logo-text{
     color: white;
-    border-radius: 19px;
-    height: 40px;
-    padding: 10px;
+    font-size: 20px;
+    margin-left: 20px;
 }
 
+/* ///CHANGE LANGUAGE AND PERSONAL ACOUNT/// */
+.nav{
+display: flex;
+margin-right: 60px;
+}
+.user-div{
+    background-color: #263e59;
+    width: 184px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+
+}
+.user{
+    color: white;
+    font-size: 18px;
+
+}
+.language-div{
+    display: flex;
+    align-items: center;
+    width: 95px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .change-language{
-display: flex;
-align-items: center;
-
-}
-.language-text{
     color: white;
-    border-radius: 19px;
-height: 40px;
-padding: 10px;
+    font-size: 18px;
+    
 }
-.arrow{
-    color: white;
-    margin-left: 5px;
+.language-div:hover{
+    background-color: #263e59;
+    border-radius: 15px;
  
 }
- .change-language:hover  { 
-    background-color: white;
-    color: #233c58;
-    border-radius: 19px;
-    height: 40px;
-    padding: 10px;
-}
-.change-language:hover .arrow{ 
-    color: #233c58;
 
-}
-.change-language:hover .language-text{ 
-    color: #233c58;
 
+
+/* /////FOOTER/// */
+
+.footer{
+    background-color: #318cf7;
+    padding: 11px;
+    color: white;
 }
-/* FOOTER */
-.more-info{
-width:100%;
-height: 60px;
-background-color: white;
-margin-top: 20px;
-margin-bottom: 20px;
-}
-.info-text{
-color: #233c58;
-font-weight: bolder;
-font-size: 15px;
+.display-flex{
 display: flex;
-align-items: center;
 justify-content: center;
-margin-bottom: 10px;
 }
-
-/* MAIN CONTANT */
+.footer-texts{
+margin-bottom: 5px;
+}
+/* ////BACKGROUND IMAGE SECTION/// */
+.back-image{
+    background:  url("../ნინოს ფაილები/7-1.jpg");
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.main-section{
+    height: 1000px;
+    display: flex;
+}
+/* ///SIDE BLOCK/// */
+.side-block{
+    width: 6%;
+    height: 100%;
+    background-color: #318cf7;
+    position: fixed;
+    z-index: 30;
+    padding-top: 270px;
+}
+.icons{
+    width: 50px;
+    margin-bottom: 30px;
+}
+.icon-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+/* ///GRADIENT LAYER// */
 .gradient{
     background-image: linear-gradient(to bottom, rgba(221, 226, 253, 0.68), rgba(224, 224, 224, 0.22));
-height: 100%;
-position: relative;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+/* ////INPUT TEXT/// */
+.search-text-wrapper{
+    width: 60%;
+    margin: 0 auto;
+    text-shadow: 2px 2px #3837378c;
+    font-size: 50px;
+    color: white;
+}
+.text-box1{
+    margin-top: 330px;
+}
+.text-box2{
+    margin-top: 12px;
 }
 
-.background-image{
-height: 871px;
-background:  url("../ნინოს ფაილები/7-1.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-}
-/* ///MAIN TEXT//// */
-.main-contant-text{
-margin-left: 350px;
-text-shadow: 2px 2px #5d606dab;
-font-family: "BPG Glaho WEB Caps", sans-serif;
-margin-left: 350px;
-}
-.text1{
-font-size: 45px;
-color: white;
-}
-.text2{
-    font-size: 45px;
-    color: white;
-    margin-top: 15px;
-}
-/* ///////////INPUT////////// */
+/* INPUT */
 .form-wrapper{
     margin-top: 110px;
     margin-left: 350px;
 }
-.main-form{
 
-}
 .input{
     height: 70px;
     width: 877px;
