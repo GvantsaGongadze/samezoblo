@@ -45,6 +45,8 @@ align-items: center;
     background-color: white;
     color: #233c58;
 }
+.background-color{
+    background-color: white;
 .private-page-text{
     display: flex;
     align-items: center;
