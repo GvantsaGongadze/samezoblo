@@ -1,1 +1,3 @@
-document.querySelector('.language')
+// function alertFunction() {
+//     alert("თქვენ წარმატებით დარეგისტრირდით!");
+//   }
