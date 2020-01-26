@@ -1,244 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>რეგისტრაცია</title>
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/registration.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css">
-</head>
-<body>
-<div class="container">
-    <div class="warning-authorization">
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/registration.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="warning-authorization">
         <div class="red-warning">
-            <img class="warning" src="./icons/warning.jpg" alt="warning">
-            <h5 class="warning-text">თუ უკვე ხარ სამეზობლოს წევრი, გაიარე ავტორიზაცია</h5>
+          <img class="warning" src="./icons/warning.jpg" alt="warning" />
+          <h5 class="warning-text">
+            თუ უკვე ხარ სამეზობლოს წევრი, გაიარე ავტორიზაცია
+          </h5>
         </div>
-        <button class="authorization">ავტორიზაცია</button>
-    </div>  
+        <button
+          class="authorization"
+          onclick="location.href='authorization.html'"
+        >
+          ავტორიზაცია
+        </button>
+      </div>
 
-    <div class="go-back back-address"><i class="material-icons" id="back-arrow">keyboard_arrow_left</i> უკან</div>
-    <div class="go-back back-info"><i class="material-icons" id="back-arrow">keyboard_arrow_left</i> უკან</div>
-    <div class="go-back back-private-info"><i class="material-icons" id="back-arrow">keyboard_arrow_left</i> უკან</div>
+      <div class="go-back back-address">
+        <i class="material-icons" id="back-arrow">keyboard_arrow_left</i> უკან
+      </div>
+      <div class="go-back back-info">
+        <i class="material-icons" id="back-arrow">keyboard_arrow_left</i> უკან
+      </div>
+      <div class="go-back back-private-info">
+        <i class="material-icons" id="back-arrow">keyboard_arrow_left</i> უკან
+      </div>
 
-    <h5 class="registration-form">რეგისტრაციის ფორმა</h5>
+      <h5 class="registration-form">რეგისტრაციის ფორმა</h5>
 
-    <section class="needed-info">
+      <section class="needed-info">
         <h6 class="border address">მისამართი</h6>
         <h6 class="border more-info">დამატებითი ინფორმაცია</h6>
         <h6 class="border private-info">პირადი მონაცემები</h6>
         <h6 class="border activating">ანგარიშის გააქტიურება</h6>
-    </section>
+      </section>
 
-    <section class="needed-info-form-address">
+      <section class="needed-info-form-address">
         <div class="address-submit">
-            <label id="address" for="submit">მისამართი <samp class="red-star">*</samp></label> 
-            <input class="submit" type="text" placeholder="მიუთითეთ თქვენი მისამართი">
-        </div>  
+          <label id="address" for="submit"
+            >მისამართი <samp class="red-star">*</samp></label
+          >
+          <input
+            class="submit"
+            type="text"
+            placeholder="მიუთითეთ თქვენი მისამართი"
+          />
+        </div>
 
         <div class="code-submit">
-            <label id="code" for="code">სამეზობლოს კოდი</label>
-            <input class="submit" type="text" placeholder="მიუთითეთ თქვენი მისამართი">
+          <label id="code" for="code">სამეზობლოს კოდი</label>
+          <input
+            class="submit"
+            type="text"
+            placeholder="მიუთითეთ თქვენი მისამართი"
+          />
         </div>
 
         <div class="map-mark">
-            <h6 id="mark">მონიშნეთ თქვენი მისამართი რუკაზე <samp class="red-star">*</samp></h6>
-            <img id="map" src="./img/map.jpg" alt="map">
+          <h6 id="mark">
+            მონიშნეთ თქვენი მისამართი რუკაზე <samp class="red-star">*</samp>
+          </h6>
+          <img id="map" src="./img/map.jpg" alt="map" />
         </div>
-   
-        <h6 class="important"><samp class="red-star">*</samp> სავალდებულო ინფორმაცია</h6>
-    </section>
 
-    <section class="needed-info-form-more-info">
-            <div class="area-submit submits">
-                <label id="area" for="submit">ფართობი</label> 
-                <div class="submit-metric">
-                    <input class="submit" type="text" placeholder="მიუთითეთ რომელ სართულზე არის თქვენი ბინა">
-                    <h5 class="metric">კვ.მ.</h5>
-                </div>
-            </div>  
-            <div class="floor-submit submits">
-                <label id="floor" for="submit">სართული</label> 
-                <input class="submit" type="text" placeholder="მიუთითეთ თქვენი ბინის ფართობი">
-            </div> 
-            <div class="flat-submit submits">
-                <label id="flat" for="submit">ბინა</label> 
-                <input class="submit" type="text" placeholder="მიუთითეთ თქვენი ბინის ფართობი">
-            </div> 
-            <div class="adult-submit submits">
-                <label id="adult" for="submit">სრულწლოვანი ადამიანების რაოდენობა</label> 
-                <input class="submit" type="text" placeholder="მიუთითეთ თქვენი ბინის მცხოვრები სრულწლოვანი ადამიანების რაოდენობა">
-            </div> 
-            <div class="under-age-submit submits">
-                <label id="under-age" for="submit">არასრულწლოვანი ადამიანების რაოდენობა <samp class="red-font">(6-დან 18 წლამდე)</samp></label> 
-                <input class="submit" type="text" placeholder="მიუთითეთ თქვენი ბინის მცხოვრები არასრულწლოვანი ადამიანების რაოდენობა">
-            </div> 
-            <div class="red-text">
-                <h6 class="important"><samp class="red-star">*</samp> სავალდებულო ინფორმაცია</h6>
-                <p class="red-font">აღნიშნული ინფორმაცია რელევანტურია, თუ კორპუსის კომუნალურების დაანგარიშება მითითებული ინფორმაციების საშუალებით ხდება</p>
-            </div>
-    </section>
+        <h6 class="important">
+          <samp class="red-star">*</samp> სავალდებულო ინფორმაცია
+        </h6>
+      </section>
 
-    <section class="needed-info-form-private-info">
-        <div class="name-submit submits">
-            <label id="name" for="submit">სახელი *</label> 
-            <input class="submit" type="text" placeholder="მიუთითეთ თქვენი სახელი">
-        </div> 
-        <div class="last-name-submit submits">
-            <label id="last-name" for="submit">გვარი *</label> 
-            <input class="submit" type="text" placeholder="მიუთითეთ თქვენი გვარი">
-        </div> 
-        <div class="date-submit submits">
-            <label id="date" for="submit">დაბადების დღე</label> 
-            <div class="data-inputs">
-                <input id="day" class="submit" type="text" placeholder="დღე">
-                <input id="month" class="submit" type="text" placeholder="თვე">
-                <input id="year" class="submit" type="text" placeholder="წელი">
-            </div>
-        </div> 
-        <div class="password-submit submits">
-            <label id="password" for="submit">პაროლი *</label> 
-            <input class="submit" type="text" placeholder="მიუთითეთ პაროლი">
-        </div> 
-        <div class="password-repeat-submit submits">
-            <label id="password-repeat" for="submit">პაროლი განმეორებით *</label> 
-            <input class="submit" type="text" placeholder="მიუთითეთ თქვენი პაროლი განმეორებით">
-        </div> 
-        <div class="code-name-submit submits">
-            <label id="code-name" for="submit">კოდური სიტყვა *</label> 
-            <input class="submit" type="text" placeholder="მიუთითეთ კოდური სიტყვა">
-        </div> 
-        <div class="code-hint-submit submits">
-            <label id="code-hint" for="submit">კოდური სიტყვის მინიშნება *</label> 
-            <input class="submit" type="text" placeholder="მიუთითეთ კოდური სიტყვის მინიშნება">
-        </div> 
+      <section class="needed-info-form-more-info">
+        <div class="area-submit submits">
+          <label id="area" for="submit">ფართობი</label>
+          <div class="submit-metric">
+            <input
+              class="submit"
+              type="text"
+              placeholder="მიუთითეთ რომელ სართულზე არის თქვენი ბინა"
+            />
+            <h5 class="metric">კვ.მ.</h5>
+          </div>
+        </div>
+        <div class="floor-submit submits">
+          <label id="floor" for="submit">სართული</label>
+          <input
+            class="submit"
+            type="text"
+            placeholder="მიუთითეთ თქვენი ბინის ფართობი"
+          />
+        </div>
+        <div class="flat-submit submits">
+          <label id="flat" for="submit">ბინა</label>
+          <input
+            class="submit"
+            type="text"
+            placeholder="მიუთითეთ თქვენი ბინის ფართობი"
+          />
+        </div>
+        <div class="adult-submit submits">
+          <label id="adult" for="submit"
+            >სრულწლოვანი ადამიანების რაოდენობა</label
+          >
+          <input
+            class="submit"
+            type="text"
+            placeholder="მიუთითეთ თქვენი ბინის მცხოვრები სრულწლოვანი ადამიანების რაოდენობა"
+          />
+        </div>
+        <div class="under-age-submit submits">
+          <label id="under-age" for="submit"
+            >არასრულწლოვანი ადამიანების რაოდენობა
+            <samp class="red-font">(6-დან 18 წლამდე)</samp></label
+          >
+          <input
+            class="submit"
+            type="text"
+            placeholder="მიუთითეთ თქვენი ბინის მცხოვრები არასრულწლოვანი ადამიანების რაოდენობა"
+          />
+        </div>
         <div class="red-text">
-            <h6 class="important"><samp class="red-star">*</samp> სავალდებულო ინფორმაცია</h6>
+          <h6 class="important">
+            <samp class="red-star">*</samp> სავალდებულო ინფორმაცია
+          </h6>
+          <p class="red-font">
+            აღნიშნული ინფორმაცია რელევანტურია, თუ კორპუსის კომუნალურების
+            დაანგარიშება მითითებული ინფორმაციების საშუალებით ხდება
+          </p>
         </div>
-    </section>
+      </section>
 
-    <section class="needed-info-form-activating">
+      <section class="needed-info-form-private-info">
+        <div class="name-submit submits">
+          <label id="name" for="submit">სახელი *</label>
+          <input
+            class="submit"
+            type="text"
+            placeholder="მიუთითეთ თქვენი სახელი"
+          />
+        </div>
+        <div class="last-name-submit submits">
+          <label id="last-name" for="submit">გვარი *</label>
+          <input
+            class="submit"
+            type="text"
+            placeholder="მიუთითეთ თქვენი გვარი"
+          />
+        </div>
+        <div class="date-submit submits">
+          <label id="date" for="submit">დაბადების დღე</label>
+          <div class="data-inputs">
+            <input id="day" class="submit" type="text" placeholder="დღე" />
+            <input id="month" class="submit" type="text" placeholder="თვე" />
+            <input id="year" class="submit" type="text" placeholder="წელი" />
+          </div>
+        </div>
+        <div class="password-submit submits">
+          <label id="password" for="submit">პაროლი *</label>
+          <input class="submit" type="text" placeholder="მიუთითეთ პაროლი" />
+        </div>
+        <div class="password-repeat-submit submits">
+          <label id="password-repeat" for="submit">პაროლი განმეორებით *</label>
+          <input
+            class="submit"
+            type="text"
+            placeholder="მიუთითეთ თქვენი პაროლი განმეორებით"
+          />
+        </div>
+        <div class="code-name-submit submits">
+          <label id="code-name" for="submit">კოდური სიტყვა *</label>
+          <input
+            class="submit"
+            type="text"
+            placeholder="მიუთითეთ კოდური სიტყვა"
+          />
+        </div>
         <div class="code-hint-submit submits">
-            <label id="phone-code" for="submit">კოდი <samp class="red-star">*</samp></label> 
-            <input class="submit" type="text" placeholder="მიუთითეთ მობილურის ნომერზე გამოგზავნილი კოდი">
-            <div class="sent-code">
-                <h5>კოდის ხელახლა გამოგზავნა</h5>
-                <h5>ტელეფონი ნომრის შეცვლა</h5>
-            </div>
-        </div> 
-        <button class="code-validation">კოდის დადასტურება</button>
-    </section>
-
-    <section id="success-registration">
-        <i id="clear-icon" class="material-icons">clear</i><br>
-        <div id="success-registration-text">
-            <h2>თქვენ </h2>
-            <h2>წარმატებით</h2> 
-            <h2>დარეგისტრირდით!</h2>
+          <label id="code-hint" for="submit">კოდური სიტყვის მინიშნება *</label>
+          <input
+            class="submit"
+            type="text"
+            placeholder="მიუთითეთ კოდური სიტყვის მინიშნება"
+          />
         </div>
-    </section>
+        <div class="red-text">
+          <h6 class="important">
+            <samp class="red-star">*</samp> სავალდებულო ინფორმაცია
+          </h6>
+        </div>
+      </section>
 
-    <button class="next next-address"> შემდეგი <i class="material-icons  arrow">arrow_forward</i></button>
-    <button class="next next-info"> შემდეგი <i class="material-icons  arrow">arrow_forward</i></button>
-    <button class="next next-private-info"> შემდეგი <i class="material-icons  arrow">arrow_forward</i></button>
+      <section class="needed-info-form-activating">
+        <div class="code-hint-submit submits">
+          <label id="phone-code" for="submit"
+            >კოდი <samp class="red-star">*</samp></label
+          >
+          <input
+            class="submit"
+            type="text"
+            placeholder="მიუთითეთ მობილურის ნომერზე გამოგზავნილი კოდი"
+          />
+          <div class="sent-code">
+            <h5>კოდის ხელახლა გამოგზავნა</h5>
+            <h5>ტელეფონი ნომრის შეცვლა</h5>
+          </div>
+        </div>
+        <button class="code-validation">კოდის დადასტურება</button>
+      </section>
 
-</div>
+      <section id="success-registration">
+        <i id="clear-icon" class="material-icons">clear</i><br />
+        <div id="success-registration-text">
+          <h2>თქვენ</h2>
+          <h2>წარმატებით</h2>
+          <h2>დარეგისტრირდით!</h2>
+        </div>
+      </section>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function () {
-            $(".next-address").click(function () {
-                $('.needed-info-form-address').slideUp()
-                $('.needed-info-form-more-info').slideDown()
-                $(".warning-authorization").slideUp();
-                $(".back-address").slideDown()
-                $(".more-info").css("background-color", "#243c58")
-                $(".more-info").css("color", "#ffffff")
-                $(".next-address").hide()
-                $(".next-info").show();
-            });
-        })
-        $(document).ready(function () {
-            $(".back-address").click(function () {
-                $('.needed-info-form-address').slideDown()
-                $('.needed-info-form-more-info').slideUp()
-                $(".warning-authorization").slideDown();
-                $(".go-back").slideUp()
-                $(".more-info").css("background-color", "#ffffff")
-                $(".more-info").css("color", "#243c58")
-                $(".next-address").show()
-                $(".next-info").hide();
-            });
-        })
-        $(document).ready(function () {
-            $(".next-info").click(function () {
-                $('.needed-info-form-more-info').slideUp()
-                $('.needed-info-form-private-info').slideDown()
-                $(".back-info").show()
-                $(".back-address").hide()
-                $(".next-private-info").show()
-                $(".next-info").hide()
-                $(".private-info").css("background-color", "#243c58")
-                $(".private-info").css("color", "#ffffff")  
-            });
-        })
-        $(document).ready(function () {
-            $(".back-info").click(function () {
-                $('.needed-info-form-more-info').slideDown()
-                $('.needed-info-form-private-info').slideUp()
-                $(".back-info").hide()
-                $(".back-address").show()
-                $(".next-private-info").hide()
-                $(".next-info").show()
-                $(".private-info").css("background-color", "#ffffff")
-                $(".private-info").css("color", "#243c58")  
-            });
-        })
+      <button class="next next-address">
+        შემდეგი <i class="material-icons  arrow">arrow_forward</i>
+      </button>
+      <button class="next next-info">
+        შემდეგი <i class="material-icons  arrow">arrow_forward</i>
+      </button>
+      <button class="next next-private-info">
+        შემდეგი <i class="material-icons  arrow">arrow_forward</i>
+      </button>
+    </div>
 
-        $(document).ready(function () {
-            $(".next-private-info").click(function () {
-                $('.needed-info-form-activating').slideDown()
-                $('.needed-info-form-private-info').slideUp()
-                $(".back-address").hide()
-                $(".next-private-info").hide()
-                $(".back-info").hide()
-                $(".back-private-info").show()
-                $(".activating").css("background-color", "#243c58")
-                $(".activating").css("color", "#ffffff")  
-            });
-        })
-
-        $(document).ready(function () {
-            $(".back-private-info").click(function () {
-                $(".back-private-info").hide()
-                $('.needed-info-form-activating').slideUp()
-                $('.needed-info-form-private-info').slideDown()
-                $(".back-address").hide()
-                $(".next-private-info").show()
-                $(".back-info").show()
-                $(".activating").css("background-color", "#ffffff")
-                $(".activating").css("color", "#243c58")  
-            });
-        })
-
-        $(document).ready(function () {
-            $(".code-validation").click(function () {
-                $(".needed-info-form-activating").hide()
-                $(".back-private-info").hide()
-                $(".needed-info").hide()
-                $(".registration-form").hide()
-                $("#success-registration").show()
-            });
-        })
-
-
-
-
-    </script>
-    <script src="./script.js"></script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./registration.js"></script>
+  </body>
 </html>
