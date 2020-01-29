@@ -150,9 +150,10 @@ margin-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    border-top-right-radius: 12px;
 }
 .blank-img{
-    width: 60px;
+    width: 40px;
 }
 .text1{
     height: 100%;
@@ -174,7 +175,7 @@ margin-bottom: 5px;
     margin-bottom: 10px;
 }
 .messages-main-part{
-    height: 100%;
+    height: 72%;
 }
 .date{
     display: flex;
@@ -193,6 +194,10 @@ margin-bottom: 5px;
 .user-img{
     width: 60px;
     margin-left: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .message-itself-wrapper{
     width: 40%;
@@ -257,4 +262,62 @@ margin-bottom: 5px;
 }
 .seperate-icons{
     margin-right: 10px;
+}
+/* 
+///////////contacts/////////////// */
+.contacts-header{
+    width: 100%;
+    background-color: #263e59;
+    height: 60px;
+    border-top-left-radius: 12px;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.find-messages{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: #919cab;
+    font-size: 18px;
+}
+.search-icon{
+    margin: 0 10px 0 20px;
+}
+.group-chat{
+    display: flex;
+    height: 90px;
+    padding: 10px 0 10px 20px;
+    color: grey;
+}
+.blank-img2{
+    height: 50px;
+}
+.text-wrapper2{
+    width: 90%;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.p2{
+    font-size: 18px;
+    margin-bottom: 9px;
+}
+.wrapper2{
+    display: flex;
+    font-size: 15px;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 25px;
+}
+.group-chat-img{
+    display: flex;
+    align-items: center;
+}
+.overflow{
+overflow-y: scroll;
+height: 495px;
+width: 100%;
 }
